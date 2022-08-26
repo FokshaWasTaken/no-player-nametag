@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "no-player-nametags",
+  "version": "${version}",
+  "name": "No Player Nametags",
+  "description": "Hides Player Nametags",
+  "authors": [
+    "Foksha"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/no-player-nametags/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.foksha.noplayernametags.client.NoPlayerNametagsClient"
+    ],
+    "main": [
+      "me.foksha.noplayernametags.NoPlayerNametags"
+    ]
+  },
+  "mixins": [
+    "no-player-nametags.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
